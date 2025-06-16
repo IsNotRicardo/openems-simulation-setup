@@ -1,0 +1,34 @@
+{
+	edges: {
+		edge0: {
+			apikey: "muoNEJ6GsCgoBe1QC2PB",
+			setuppassword: "edge0",
+			comment: "Edge0"
+		},
+		edge1: {
+			apikey: "5fVZFcDucvzN2MBI8uM0",
+			setuppassword: "edge1",
+			comment: "Edge1"
+		},
+        	edge2: {
+			apikey: "CAEykLeQP2gFMR1BZQKr",
+			setuppassword: "edge2",
+			comment: "Edge2"
+		},
+		edge3: {
+			apikey: "ipYIewT9XG1TtsiMc5D4",
+			setuppassword: "edge3",
+			comment: "Edge3"
+		},
+        	edge4: {
+			apikey: "GUDZxnCv8ONfpT2dgRhI",
+			setuppassword: "edge4",
+			comment: "Edge4"
+		},
+		edge5: {
+			apikey: "At1cg98UkRv93AO069Um",
+			setuppassword: "edge5",
+			comment: "Edge5"
+		}
+	}
+}
