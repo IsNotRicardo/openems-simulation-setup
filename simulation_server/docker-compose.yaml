@@ -1,0 +1,36 @@
+services:
+  openems-backend:
+    image: openems/backend:latest
+    container_name: openems_backend
+    hostname: openems_backend
+    restart: unless-stopped
+    volumes:
+      - openems-backend-conf:/var/opt/openems/config:rw
+      - openems-backend-data:/var/opt/openems/data:rw
+    ports:
+      - 8079:8079 # Apache-Felix
+      - 8081:8081 # Edge-Websocket
+      - 8082:8082 # UI-Websocket
+      - 8085:8085 # Backend2Backend REST
+    networks:
+      - openems_network
+
+  openems-influxdb:
+    image: influxdb:alpine
+    container_name: openems_influxdb
+    hostname: openems_influxdb
+    restart: unless-stopped
+    volumes:
+      - openems-influxdb:/var/lib/influxdb2:rw
+    ports:
+      - 8086:8086
+
+volumes:
+  openems-backend-conf:
+  openems-backend-data:
+  openems-influxdb:
+
+networks:
+  openems_network:
+    name: openems_simulation_network
+    external: true

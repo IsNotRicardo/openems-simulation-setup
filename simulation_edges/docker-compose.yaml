@@ -1,0 +1,97 @@
+services:
+  openems-edge0:
+    image: openems/edge:latest
+    container_name: openems_edge0
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf0:/var/opt/openems/config:rw
+      - openems-edge-data0:/var/opt/openems/data:rw
+    ports:
+      - 9090:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+  openems-edge1:
+    image: openems/edge:latest
+    container_name: openems_edge1
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf1:/var/opt/openems/config:rw
+      - openems-edge-data1:/var/opt/openems/data:rw
+    ports:
+      - 9091:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+  openems-edge2:
+    image: openems/edge:latest
+    container_name: openems_edge2
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf2:/var/opt/openems/config:rw
+      - openems-edge-data2:/var/opt/openems/data:rw
+    ports:
+      - 9092:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+  openems-edge3:
+    image: openems/edge:latest
+    container_name: openems_edge3
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf3:/var/opt/openems/config:rw
+      - openems-edge-data3:/var/opt/openems/data:rw
+    ports:
+      - 9093:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+  openems-edge4:
+    image: openems/edge:latest
+    container_name: openems_edge4
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf4:/var/opt/openems/config:rw
+      - openems-edge-data4:/var/opt/openems/data:rw
+    ports:
+      - 9094:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+  openems-edge5:
+    image: openems/edge:latest
+    container_name: openems_edge5
+    hostname: openems_edge
+    restart: unless-stopped
+    volumes:
+      - openems-edge-conf5:/var/opt/openems/config:rw
+      - openems-edge-data5:/var/opt/openems/data:rw
+    ports:
+      - 9095:8080 # Apache-Felix
+    networks:
+      - openems_network
+
+volumes:
+  openems-edge-conf0:
+  openems-edge-data0:
+  openems-edge-conf1:
+  openems-edge-data1:
+  openems-edge-conf2:
+  openems-edge-data2:
+  openems-edge-conf3:
+  openems-edge-data3:
+  openems-edge-conf4:
+  openems-edge-data4:
+  openems-edge-conf5:
+  openems-edge-data5:
+
+networks:
+  openems_network:
+    name: openems_simulation_network
+    external: true
