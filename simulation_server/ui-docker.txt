@@ -1,0 +1,14 @@
+
+  openems_backend_ui:
+    image: openems/ui-backend:2025.3.0
+    container_name: openems_backend_ui
+    hostname: openems_backend_ui
+    restart: unless-stopped
+    volumes:
+      - openems-ui-conf:/etc/nginx:rw
+      - openems-ui-log:/var/log/nginx:rw
+    environment:
+      - UI_WEBSOCKET=ws://localhost:8082
+    ports:
+      - 80:80
+      - 443:443

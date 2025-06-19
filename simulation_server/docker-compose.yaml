@@ -1,6 +1,6 @@
 services:
   openems-backend:
-    image: openems/backend:latest
+    image: openems/backend:2025.3.0
     container_name: openems_backend
     hostname: openems_backend
     restart: unless-stopped
@@ -11,7 +11,7 @@ services:
       - 8079:8079 # Apache-Felix
       - 8081:8081 # Edge-Websocket
       - 8082:8082 # UI-Websocket
-      - 8085:8085 # Backend2Backend REST
+      - 8075:8075 # Backend2Backend REST
     networks:
       - openems_network
 
