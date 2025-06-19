@@ -1,34 +1,84 @@
 {
-	edges: {
-		edge0: {
-			apikey: "muoNEJ6GsCgoBe1QC2PB",
-			setuppassword: "edge0",
-			comment: "Edge0"
+	"edges": {
+		"edge0": {
+			"apikey": "XBkPs5yCZeV5JMmv5FXJ",
+			"setuppassword": "edge0",
+			"comment": "Edge0"
 		},
-		edge1: {
-			apikey: "5fVZFcDucvzN2MBI8uM0",
-			setuppassword: "edge1",
-			comment: "Edge1"
+		"edge1": {
+			"apikey": "C0j5hoMriJM8cL8Dfe7f",
+			"setuppassword": "edge1",
+			"comment": "Edge1"
 		},
-        	edge2: {
-			apikey: "CAEykLeQP2gFMR1BZQKr",
-			setuppassword: "edge2",
-			comment: "Edge2"
+		"edge2": {
+			"apikey": "1THya0NgzRBkmbfG4Sal",
+			"setuppassword": "edge2",
+			"comment": "Edge2"
 		},
-		edge3: {
-			apikey: "ipYIewT9XG1TtsiMc5D4",
-			setuppassword: "edge3",
-			comment: "Edge3"
+		"edge3": {
+			"apikey": "mihWVUN26fAy9Pn9TsdF",
+			"setuppassword": "edge3",
+			"comment": "Edge3"
 		},
-        	edge4: {
-			apikey: "GUDZxnCv8ONfpT2dgRhI",
-			setuppassword: "edge4",
-			comment: "Edge4"
+		"edge4": {
+			"apikey": "XbLf2mlP2PZLpoh4IryS",
+			"setuppassword": "edge4",
+			"comment": "Edge4"
 		},
-		edge5: {
-			apikey: "At1cg98UkRv93AO069Um",
-			setuppassword: "edge5",
-			comment: "Edge5"
+		"edge5": {
+			"apikey": "IReB6HWtVygSZkhBXwOr",
+			"setuppassword": "edge5",
+			"comment": "Edge5"
+		},
+		"edge6": {
+			"apikey": "x8FrMaNtYP9tbY6tTJLm",
+			"setuppassword": "edge6",
+			"comment": "Edge6"
+		},
+		"edge7": {
+			"apikey": "oVLTKUB1vkkuwzuHpxan",
+			"setuppassword": "edge7",
+			"comment": "Edge7"
+		},
+		"edge8": {
+			"apikey": "WrmQsnwhGKpzf8stny0D",
+			"setuppassword": "edge8",
+			"comment": "Edge8"
+		},
+		"edge9": {
+			"apikey": "Z4PNw9iUxAFxLg7brUdn",
+			"setuppassword": "edge9",
+			"comment": "Edge9"
+		},
+		"edge10": {
+			"apikey": "eBG9h7HQ4gJiBnsPsrUJ",
+			"setuppassword": "edge10",
+			"comment": "Edge10"
+		},
+		"edge11": {
+			"apikey": "K5vBvaubAg719MI1wCFB",
+			"setuppassword": "edge11",
+			"comment": "Edge11"
+		},
+		"edge12": {
+			"apikey": "YjxOYHGfv0JQ7zsOqhsW",
+			"setuppassword": "edge12",
+			"comment": "Edge12"
+		},
+		"edge13": {
+			"apikey": "M4zMgWGM9TgXAh6lO0Pm",
+			"setuppassword": "edge13",
+			"comment": "Edge13"
+		},
+		"edge14": {
+			"apikey": "UXMyMHOk5NsRjfSecyF7",
+			"setuppassword": "edge14",
+			"comment": "Edge14"
+		},
+		"edge15": {
+			"apikey": "VVWyL8vS3ioPWWZZFyoD",
+			"setuppassword": "edge15",
+			"comment": "Edge15"
 		}
 	}
 }
