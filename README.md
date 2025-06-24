@@ -6,9 +6,13 @@ This repository contains all the files needed to run the simulation of the "Ener
 
 A guide on how to setup the OpenEMS Edges and the OpenEMS Backend can be found [here](https://docs.google.com/document/d/1jlzYWELOZlOSCAUN_QZrmKhfBdIGzFCbjZBVsHW-s-Q/edit?tab=t.0#heading=h.dgj6niftdjn1).
 
+## Bruno
+
+This directory contains the Bruno collection which automatically creates all the components in the OpenEMS Edges that are needed to run the simulation. The collections contains two directories: **Create components**, **Delete components** and **Additional configurations**. The latter contains options to customize the simulation.
+
 ## Postman
 
-This directory contains the Postman collection in JSON which automatically creates all the components in the OpenEMS Edges that are needed to run the simulation. Once imported into Postman, the collection itself contains two directories: **Create components** and **Delete components**. As the names suggest, running each specific folder will create or remove the necessary components, respectively.
+This directory contains the Postman collection in JSON which automatically creates all the components in the OpenEMS Edges that are needed to run the simulation. Once imported into Postman, the collection will contain the same directories as Bruno.
 
 ## Simulation Edges
 
