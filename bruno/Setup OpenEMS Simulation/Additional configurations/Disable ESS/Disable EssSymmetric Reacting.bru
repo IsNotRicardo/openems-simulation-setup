@@ -1,0 +1,37 @@
+meta {
+  name: Disable EssSymmetric Reacting
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{request_url}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}
+
+body:json {
+  {
+      "method": "edgeRpc",
+      "params": {
+          "edgeId": "edge0",
+          "payload": {
+              "method": "updateComponentConfig",
+              "params": {
+                  "componentId": "{{ess_system}}",
+                  "properties": [
+                      {
+                          "name": "enabled",
+                          "value": false
+                      }
+                  ]
+              }
+          }
+      }
+  }
+}

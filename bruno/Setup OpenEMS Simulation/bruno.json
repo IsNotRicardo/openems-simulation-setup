@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Setup OpenEMS Simulation",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,41 @@
+meta {
+  name: Create GridMeter Acting
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{request_url}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}
+
+body:json {
+  {
+      "method": "edgeRpc",
+      "params": {
+          "edgeId": "edge6",
+          "payload": {
+              "method": "createComponentConfig",
+              "params": {
+                  "factoryPid": "Simulator.GridMeter.Acting",
+                  "properties": [
+                      {
+                          "name": "id",
+                          "value": "{{forehearth_mt}}"
+                      },
+                      {
+                          "name": "datasource.id",
+                          "value": "{{forehearth_ds}}"
+                      }
+                  ]
+              }
+          }
+      }
+  }
+}

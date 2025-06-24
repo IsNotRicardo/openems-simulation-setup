@@ -1,0 +1,31 @@
+meta {
+  name: Delete DataSource CSV
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{request_url}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}
+
+body:json {
+  {
+      "method": "edgeRpc",
+      "params": {
+          "edgeId": "edge6",
+          "payload": {
+              "method": "deleteComponentConfig",
+              "params": {
+                  "componentId": "{{forehearth_ds}}"
+              }
+          }
+      }
+  }
+}

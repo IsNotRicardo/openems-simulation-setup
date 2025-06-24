@@ -1,0 +1,31 @@
+meta {
+  name: Delete GridMeter Acting
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{request_url}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}
+
+body:json {
+  {
+      "method": "edgeRpc",
+      "params": {
+          "edgeId": "edge5",
+          "payload": {
+              "method": "deleteComponentConfig",
+              "params": {
+                  "componentId": "{{forehearth_mt}}"
+              }
+          }
+      }
+  }
+}

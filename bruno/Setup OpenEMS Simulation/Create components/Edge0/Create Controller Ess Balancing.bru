@@ -1,0 +1,45 @@
+meta {
+  name: Create Controller Ess Balancing
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{request_url}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}
+
+body:json {
+  {
+      "method": "edgeRpc",
+      "params": {
+          "edgeId": "edge0",
+          "payload": {
+              "method": "createComponentConfig",
+              "params": {
+                  "factoryPid": "Controller.Symmetric.Balancing",
+                  "properties": [
+                      {
+                          "name": "id",
+                          "value": "{{balancing_ctrl}}"
+                      },
+                      {
+                          "name": "ess.id",
+                          "value": "{{ess_system}}"
+                      },
+                      {
+                          "name": "meter.id",
+                          "value": "{{reacting_mt}}"
+                      }
+                  ]
+              }
+          }
+      }
+  }
+}

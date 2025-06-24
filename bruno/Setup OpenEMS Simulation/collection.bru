@@ -1,0 +1,27 @@
+meta {
+  name: Setup OpenEMS Simulation
+  seq: 1
+}
+
+auth {
+  mode: none
+}
+
+vars:pre-request {
+  request_url: http://localhost:8075/jsonrpc
+  mixer_ds: batch_mixer_datasource
+  mixer_mt: batch_mixer_meter
+  furnace_ds: melting_furnace_datasource
+  furnace_mt: melting_furnace_meter
+  forehearth_ds: forehearth_datasource
+  forehearth_mt: forehearth_meter
+  forming_ds: forming_machine_datasource
+  forming_mt: forming_machine_meter
+  lehr_ds: lehr_oven_datasource
+  lehr_mt: lehr_oven_meter
+  solar_ds: solar_panel_datasource
+  solar_mt: solar_panel_meter
+  reacting_mt: reacting_meter
+  ess_system: ess_system
+  balancing_ctrl: ess_balancing_controller
+}
