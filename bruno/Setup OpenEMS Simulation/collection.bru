@@ -9,6 +9,7 @@ auth {
 
 vars:pre-request {
   request_url: http://localhost:8075/jsonrpc
+  scaling_factor: 60
   mixer_ds: batch_mixer_datasource
   mixer_mt: batch_mixer_meter
   furnace_ds: melting_furnace_datasource
