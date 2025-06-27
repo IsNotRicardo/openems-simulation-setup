@@ -20,4 +20,4 @@ This directory contains the Docker compose file which creates the Docker contain
 
 ## Simulation Server
 
-This directory contains the Docker compose file which creates the Docker containers for the OpenEMS Backend and InfluxDB. It also contains the `metadata.json` file, which is where the connection credentials of all the Edges are stored. This file or the information contained in it should be included in the Backend container files, as instructed in the guide at the beginning.
+This directory contains the Docker compose file which creates the Docker containers for the OpenEMS Backend, OpenEMS Backend UI and InfluxDB. It also contains the `metadata.json` file, which is where the connection credentials of all the Edges are stored. This file or the information contained in it should be included in the Backend container files, as instructed in the guide at the beginning.
