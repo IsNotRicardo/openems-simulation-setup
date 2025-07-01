@@ -148,7 +148,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"method\": \"edgeRpc\",\r\n    \"params\": {\r\n        \"edgeId\": \"edge0\",\r\n        \"payload\": {\r\n            \"method\": \"createComponentConfig\",\r\n            \"params\": {\r\n                \"factoryPid\": \"Simulator.EssSymmetric.Reacting\",\r\n                \"properties\": [\r\n                    {\r\n                        \"name\": \"id\",\r\n                        \"value\": \"{{ess_system}}\"\r\n                    },\r\n                    {\r\n                        \"name\": \"maxApparentPower\",\r\n                        \"value\": 10000\r\n                    },\r\n                    {\r\n                        \"name\": \"capacity\",\r\n                        \"value\": 10000\r\n                    },\r\n                    {\r\n                        \"name\": \"initialSoc\", \r\n                        \"value\": 60\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+									"raw": "{\r\n    \"method\": \"edgeRpc\",\r\n    \"params\": {\r\n        \"edgeId\": \"edge0\",\r\n        \"payload\": {\r\n            \"method\": \"createComponentConfig\",\r\n            \"params\": {\r\n                \"factoryPid\": \"Simulator.EssSymmetric.Reacting\",\r\n                \"properties\": [\r\n                    {\r\n                        \"name\": \"id\",\r\n                        \"value\": \"{{ess_system}}\"\r\n                    },\r\n                    {\r\n                        \"name\": \"maxApparentPower\",\r\n                        \"value\": 240000000\r\n                    },\r\n                    {\r\n                        \"name\": \"capacity\",\r\n                        \"value\": 24000000\r\n                    },\r\n                    {\r\n                        \"name\": \"initialSoc\", \r\n                        \"value\": 60\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3468,7 +3468,7 @@
 		},
 		{
 			"key": "ess_system",
-			"value": "ess_system",
+			"value": "ess_reacting",
 			"type": "string"
 		},
 		{
